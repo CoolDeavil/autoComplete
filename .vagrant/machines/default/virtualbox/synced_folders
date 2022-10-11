@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/html/application":{"mount_options":["dmode=777","fmode=777","uid=1000","gid=1000","_netdev"],"SharedFoldersEnableSymlinksCreate":true,"guestpath":"/var/www/html/application","hostpath":"E:/David/daveShop","disabled":false,"__vagrantfile":true}}}

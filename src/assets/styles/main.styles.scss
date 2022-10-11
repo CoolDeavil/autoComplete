@@ -1,0 +1,64 @@
+@import "node_modules/bootstrap-css-only";
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300;1,400&family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300;1,400&family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+@font-face {
+  font-family: Captcha;
+  src: url("../fonts/AnonymousClippings.ttf");
+}
+
+.defLogo {
+  content: url("../images/logo.png");
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.high {
+  color: orangered;
+  font-weight: bold;
+}
+
+
+
+.customRender {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  .customItem {
+    .c-desc {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+    &:hover {
+      background-color: #d2e98f;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    &.active {
+      background-color: #7a827c;
+      color: whitesmoke;
+      font-weight: bold;
+
+    }
+  }
+
+  .iFlag {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@import "title";
+@import "eList";

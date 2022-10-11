@@ -1,0 +1,22 @@
+.eList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  .eItem {
+    div {
+      height: 2rem;
+      line-height: 2rem;
+      padding-left: .3rem;
+    }
+    &.active {
+      background-color: #e2cccc;
+      color: black;
+      font-weight: bolder;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #0a49f3;
+      color: whitesmoke;
+    }
+  }
+}

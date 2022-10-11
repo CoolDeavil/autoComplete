@@ -1,0 +1,28 @@
+
+.canvas {
+  border: solid 1px black;
+  background-color: whitesmoke;
+  padding: 1.5rem;
+}
+
+.needle {
+  background-color: antiquewhite;
+  &.err {
+    border: orangered solid 2px;
+    background-color: pink;
+  }
+}
+
+
+
+.content {
+  position: relative;
+  width: 100%;
+  z-index: 20;
+  overflow-y: scroll;
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  min-height: 2rem;
+}
+

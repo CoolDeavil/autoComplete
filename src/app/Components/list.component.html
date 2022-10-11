@@ -1,0 +1,15 @@
+<div (clickOutside)="close()" class="selectWrapper">
+  <div class="status"></div>
+  <div #dropToggle class="dropToggle"></div>
+  <input #needle class="needle"
+         type="text"
+         aria-label="input"
+         autocomplete="off"
+         placeholder="Type Something...."
+         (keyup)="keyboardHandler($event)"
+        >
+  <div #dropDown class="dropDownPanel show">
+    <div class="dropDown">
+    </div>
+  </div>
+</div>

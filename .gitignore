@@ -40,6 +40,9 @@ yarn-error.log
 testem.log
 /typings
 
+composer.json
+composer.lock
+
 # System files
 .DS_Store
 Thumbs.db

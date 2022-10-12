@@ -16,7 +16,7 @@ export default class ScrollBox {
     private selectedItem: number = 0;
 
     constructor() {
-      console.log('Content v0.0.0.0');
+      // console.log('Content v0.0.0.0');
     }
 
     bootstrap(options:any){
@@ -26,8 +26,9 @@ export default class ScrollBox {
         return;
       }
       this.anchor = this.options.anchor;
-      console.log('Content ' , this.options);
-
+    }
+    getActive(){
+      return this.selectedItem;
     }
     clear(){
         this.anchor.innerHTML=''

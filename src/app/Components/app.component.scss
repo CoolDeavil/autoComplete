@@ -1,28 +1,16 @@
 
-.canvas {
-  border: solid 1px black;
-  background-color: whitesmoke;
-  padding: 1.5rem;
-}
-
-.needle {
-  background-color: antiquewhite;
-  &.err {
-    border: orangered solid 2px;
-    background-color: pink;
+.detail {
+  img {
+    width: 5rem;
+    height: 5rem;
   }
 }
 
 
-
-.content {
-  position: relative;
+.results {
+  background-color: whitesmoke;
+  font-family: Consolas,  serif;
   width: 100%;
-  z-index: 20;
-  overflow-y: scroll;
-  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   min-height: 2rem;
+  font-weight: bold;
 }
-

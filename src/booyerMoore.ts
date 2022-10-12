@@ -1,5 +1,5 @@
 /**
- * Returns the index of the first occurrence of given string in the phrase
+ * Returns the index of the first occurence of given string in the phrase
  * In case of no match, returns -1
  *
  * @param text string to be searched

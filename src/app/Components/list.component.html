@@ -1,6 +1,7 @@
+
 <div (clickOutside)="close()" class="selectWrapper">
-  <div class="status"></div>
-  <div #dropToggle class="dropToggle"></div>
+  <div  #status [ngClass]="needleStatus?'status':'status error'" ></div>
+  <div #dropToggle [ngClass]="listedItems.length>0?'dropToggle':'dropToggle error'"></div>
   <input #needle class="needle"
          type="text"
          aria-label="input"
@@ -8,7 +9,7 @@
          placeholder="Type Something...."
          (keyup)="keyboardHandler($event)"
         >
-  <div #dropDown class="dropDownPanel show">
+  <div #dropDown class="dropDownPanel">
     <div class="dropDown">
     </div>
   </div>

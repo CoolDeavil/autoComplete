@@ -1,4 +1,5 @@
 import {AfterViewInit, Component} from '@angular/core';
+import {SafeHtml} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,13 @@ import {AfterViewInit, Component} from '@angular/core';
 
 
 export class AppComponent{
-  public title:string = 'davidShop';
+  public title:string = 'EasyList';
+  selected: boolean = false;
+  public row: SafeHtml
 
-  constructor() {}
+  constructor() {
+    this.row=JSON.stringify({}, undefined, 2);
+  }
 
   renderCustomTemplate(item:any, i:any) : string {
     return `<li class="customItem">
@@ -36,5 +41,13 @@ export class AppComponent{
           </tbody>
         </table>
       </li>`
+  }
+
+  showSelected(selected:any) {
+    if(selected){
+      this.row=JSON.stringify(selected, undefined, 2);
+    } else {
+      this.selected = false;
+    }
   }
 }

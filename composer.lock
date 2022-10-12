@@ -4,123 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "20ea8bdef4d3ef1fffac2e9c959a0b49",
+    "content-hash": "ef1bb9955dde35b84e48f81b1e6627ad",
     "packages": [
-        {
-            "name": "filp/whoops",
-            "version": "2.14.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/filp/whoops.git",
-                "reference": "a63e5e8f26ebbebf8ed3c5c691637325512eb0dc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/a63e5e8f26ebbebf8ed3c5c691637325512eb0dc",
-                "reference": "a63e5e8f26ebbebf8ed3c5c691637325512eb0dc",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9 || ^7.0 || ^8.0",
-                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^0.9 || ^1.0",
-                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.3",
-                "symfony/var-dumper": "^2.6 || ^3.0 || ^4.0 || ^5.0"
-            },
-            "suggest": {
-                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
-                "whoops/soap": "Formats errors as SOAP responses"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Whoops\\": "src/Whoops/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Filipe Dobreira",
-                    "homepage": "https://github.com/filp",
-                    "role": "Developer"
-                }
-            ],
-            "description": "php error handling for cool kids",
-            "homepage": "https://filp.github.io/whoops/",
-            "keywords": [
-                "error",
-                "exception",
-                "handling",
-                "library",
-                "throwable",
-                "whoops"
-            ],
-            "support": {
-                "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.14.5"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/denis-sokolov",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-01-07T12:00:00+00:00"
-        },
-        {
-            "name": "franzl/whoops-middleware",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/franzliedke/whoops-middleware.git",
-                "reference": "71d75c5fff75587d6194a051d510a9eca0e3a047"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/franzliedke/whoops-middleware/zipball/71d75c5fff75587d6194a051d510a9eca0e3a047",
-                "reference": "71d75c5fff75587d6194a051d510a9eca0e3a047",
-                "shasum": ""
-            },
-            "require": {
-                "filp/whoops": "^1.1 || ^2.0",
-                "middlewares/utils": "^3.0",
-                "php": "^7.2 || ^8.0"
-            },
-            "require-dev": {
-                "laminas/laminas-diactoros": "^1.1.0 || ^2.0",
-                "phpunit/phpunit": "^8.0",
-                "psr/http-server-middleware": "^1.0"
-            },
-            "suggest": {
-                "psr/http-server-middleware": "In case you want to use PSR 15 middleware"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Franzl\\Middleware\\Whoops\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "PSR-15 compatible middleware for Whoops, the pretty error handler",
-            "support": {
-                "issues": "https://github.com/franzliedke/whoops-middleware/issues",
-                "source": "https://github.com/franzliedke/whoops-middleware/tree/2.0.0"
-            },
-            "time": "2021-01-03T01:30:07+00:00"
-        },
         {
             "name": "guzzlehttp/psr7",
             "version": "2.4.1",
@@ -284,121 +169,6 @@
                 "source": "https://github.com/http-interop/response-sender/tree/master"
             },
             "time": "2017-03-17T15:46:19+00:00"
-        },
-        {
-            "name": "middlewares/utils",
-            "version": "v3.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/middlewares/utils.git",
-                "reference": "670b135ce0dbd040eadb025a9388f9bd617cc010"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/middlewares/utils/zipball/670b135ce0dbd040eadb025a9388f9bd617cc010",
-                "reference": "670b135ce0dbd040eadb025a9388f9bd617cc010",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2 || ^8.0",
-                "psr/container": "^1.0 || ^2.0",
-                "psr/http-factory": "^1.0",
-                "psr/http-message": "^1.0",
-                "psr/http-server-middleware": "^1.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^v2.16",
-                "guzzlehttp/psr7": "^2.0",
-                "laminas/laminas-diactoros": "^2.4",
-                "nyholm/psr7": "^1.0",
-                "oscarotero/php-cs-fixer-config": "^1.0",
-                "phpstan/phpstan": "^0.12",
-                "phpunit/phpunit": "^8|^9",
-                "slim/psr7": "^1.4",
-                "squizlabs/php_codesniffer": "^3.5",
-                "sunrise/http-message": "^1.0",
-                "sunrise/http-server-request": "^1.0",
-                "sunrise/stream": "^1.0.15",
-                "sunrise/uri": "^1.0.15"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Middlewares\\Utils\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Common utils for PSR-15 middleware packages",
-            "homepage": "https://github.com/middlewares/utils",
-            "keywords": [
-                "PSR-11",
-                "http",
-                "middleware",
-                "psr-15",
-                "psr-17",
-                "psr-7"
-            ],
-            "support": {
-                "issues": "https://github.com/middlewares/utils/issues",
-                "source": "https://github.com/middlewares/utils/tree/v3.3.0"
-            },
-            "time": "2021-07-04T17:56:23+00:00"
-        },
-        {
-            "name": "psr/container",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/container.git",
-                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
-                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Container\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
-                }
-            ],
-            "description": "Common Container Interface (PHP FIG PSR-11)",
-            "homepage": "https://github.com/php-fig/container",
-            "keywords": [
-                "PSR-11",
-                "container",
-                "container-interface",
-                "container-interop",
-                "psr"
-            ],
-            "support": {
-                "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/2.0.2"
-            },
-            "time": "2021-11-05T16:47:00+00:00"
         },
         {
             "name": "psr/http-factory",
@@ -621,56 +391,6 @@
                 "source": "https://github.com/php-fig/http-server-middleware/tree/master"
             },
             "time": "2018-10-30T17:12:04+00:00"
-        },
-        {
-            "name": "psr/log",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/log.git",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Log\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for logging libraries",
-            "homepage": "https://github.com/php-fig/log",
-            "keywords": [
-                "log",
-                "psr",
-                "psr-3"
-            ],
-            "support": {
-                "source": "https://github.com/php-fig/log/tree/3.0.0"
-            },
-            "time": "2021-07-14T16:46:02+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -1217,7 +937,13 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-intl": "*",
+        "ext-gd": "*",
+        "ext-pdo": "*",
+        "ext-fileinfo": "*",
+        "ext-exif": "*"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
 }

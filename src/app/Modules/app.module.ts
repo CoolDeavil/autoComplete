@@ -27,7 +27,7 @@ import ScrollBox from "../Classes/scrollBox";
     SafeHtmlPipe,
     ClickOutsideDirective,
     StoreService,
-    ScrollBox
+    ScrollBox,
   ],
   bootstrap: [AppComponent]
 })

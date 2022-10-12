@@ -19,7 +19,9 @@ $item-ui-hover: #FFFFFFFF;
   width: 100%;
   .needle {
     width: 100%;
-
+    &.error {
+      border: solid 1px red;
+    }
     &::placeholder {
       color: darkgrey;
     }
@@ -108,6 +110,10 @@ $item-ui-hover: #FFFFFFFF;
         padding: 0;
       }
     }
+
+
+
+
   }
 }
 .ellipsis_  {

@@ -60,6 +60,7 @@ export class ListComponent  implements AfterViewInit{
     sheet.innerHTML = this.style();
     document.body.appendChild(sheet);
 
+    this.store.test()
     // let dataBank = new DataBank();
     // this.store.getJsonCountry().then(((d:any)=>{
     //   dataBank.setNeedle('name');

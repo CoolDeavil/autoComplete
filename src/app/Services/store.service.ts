@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {boyerMooreSearch} from '../../booyerMoore'
 
 
@@ -14,11 +14,25 @@ export class StoreService {
   private url: string
   private requestType: number;
   private dataVault: any;
+  private headers: HttpHeaders;
   constructor(private http: HttpClient) {
     this.url='';
     this.needle='';
     this.requestType=URL;
+    this.headers = new HttpHeaders()
+      .set('content-type','application/json')
+      .set('X-Requested-With','XMLHttpRequest')
+      .set('Access-Control-Allow-Origin', '*')
+
   }
+
+  public test(){
+    this.http.get('http://192.168.30.30',{headers:this.headers}).subscribe((result:any)=>{
+      console.log("TEST RESULT");
+      console.log(result)
+    })
+  }
+
   public setEndPoint(url:string, needle: string){
     this.url = url;
     this.needle=needle;
@@ -47,10 +61,9 @@ export class StoreService {
         });
         resolve(result);
       }else{
-        this.http.get(this.url+name).subscribe((data:any) =>{
+        this.http.get(this.url+name,{'headers':this.headers}).subscribe((data:any) =>{
           if(data[0] && !data[0][this.needle]){
             console.log("Needle settings dont match %c[ERROR]",'color: red;font-weight: bolder');
-
             reject({error:'needle settings dont match!'});
           }
           resolve(data);
